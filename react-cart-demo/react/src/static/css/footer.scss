@@ -1,0 +1,24 @@
+.footer{
+    height:48px;
+    background: #fff;
+    ul{
+        display: flex;
+        height:100%;
+        align-items: center;
+        justify-content: space-around;
+        li{
+            a{
+                display: flex;
+                flex-direction: column;
+                color:#969696;
+                span{
+                    text-align: center;
+                    font-size:16px;
+                }
+                &.active{
+                   color:#f66;
+                }
+            }
+        }
+    }
+}

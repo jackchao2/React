@@ -1,0 +1,32 @@
+// .banner{
+//     height:200px;
+//     background: yellow;
+//     margin:5px;
+//     border-radius: 10px;
+// }
+.home{
+    .content{
+        background:#eee;
+        .Business,.shares,.profit,.tabs{
+            // height:200px;
+            background:#fff;
+            margin:5px;
+            box-sizing: border-box;
+            .Business-charts{
+                height:200px;
+                // background:red
+            }
+        }
+        .profit{
+            .profit_content{
+                display: flex;
+                height:130px;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 20px;
+                color:red;
+            }
+        }
+        
+    }
+}

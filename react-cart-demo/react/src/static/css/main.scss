@@ -1,0 +1,86 @@
+body,html {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#root{
+   height:100%;
+   .routes{
+      height: 100%;
+   }
+}
+.container{
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   .content{
+       flex:1;
+       overflow-y: auto;
+      //  height: 100px;
+   }
+}
+// title 組件開始
+.title{
+   height:35px;
+   line-height: 35px;
+   position: relative;
+   border-bottom: 1px solid #eee;
+   // background:yellow;
+   // display: flex;
+   // align-items: center;
+   .title_border{
+      width:3px;
+      border-radius: 4px;
+      height:50%;
+      
+      // padding:10px 0;
+      // height:50%;
+      background: #2f70ff;
+      float: left;
+      margin:9px 5px 0px 5px;
+      // box-sizing: border-box;
+      display:inline-block;
+      
+   }
+   .title_text{
+      font-weight: 900;
+      float: left;
+   }
+   .hint{
+      font-size:14px;
+      margin:0 5px;
+      float: left;
+   }
+   .title_data{
+      // display: inline-block;
+      // float: right;
+      position: absolute;
+      right:0;
+      top:50%;
+      transform: translateY(-50%);
+      width:120px;
+      height:20px;
+      margin-right:10px;
+      border-radius: 5px;
+      border:1px solid #000; /*px*/ 
+      text-align: center;
+      line-height:20px;
+   }
+}
+
+//超出两行文本溢出......
+.twotext{
+   text-overflow: -o-ellipsis-lastline;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+   -webkit-box-orient: vertical
+}
+// 单行文本溢出
+.using{
+   overflow: hidden;    
+   text-overflow:ellipsis;    
+   white-space: nowrap;
+}

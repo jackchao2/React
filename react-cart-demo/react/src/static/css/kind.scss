@@ -1,0 +1,37 @@
+.kindlist{
+    width:100%;
+    display: flex;
+    flex-flow: wrap;
+    padding:5px;
+    box-sizing: border-box;
+    background: #ccc;
+    // height:100px;
+    // background:blue;
+    li{
+        width:50%;
+        height:220px;
+        background: #fff;
+        // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1),0 0 10px 0 rgba(0,0,0,0.2);
+        &:nth-child(even){
+            padding-left:2.5px;
+            padding-bottom: 5px;
+            background-clip: content-box;
+            box-sizing: border-box;
+        }
+        &:nth-child(odd){
+            padding-right:2.5px;
+            padding-bottom: 5px;
+            background-clip: content-box;
+            box-sizing: border-box;
+        }
+        img{
+            width:100%;
+            height:150px;
+        }
+        p{
+            margin-top:5px;
+            text-indent:20px;
+            height:36px;
+        }
+    }
+}
